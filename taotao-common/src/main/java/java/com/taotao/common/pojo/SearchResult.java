@@ -26,7 +26,4 @@ public class SearchResult implements Serializable{
 	public void setItemList(List<SearchItem> itemList) {
 		this.itemList = itemList;
 	}
-	
-	
-	
 }
