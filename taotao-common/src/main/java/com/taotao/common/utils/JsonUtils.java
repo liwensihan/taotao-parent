@@ -1,4 +1,4 @@
-package java.com.taotao.common.utils;
+package com.taotao.common.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;

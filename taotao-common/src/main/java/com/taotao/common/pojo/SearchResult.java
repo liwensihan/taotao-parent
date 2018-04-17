@@ -1,4 +1,4 @@
-package java.com.taotao.common.pojo;
+package com.taotao.common.pojo;
 
 import java.io.Serializable;
 import java.util.List;

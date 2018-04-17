@@ -13,7 +13,6 @@
         <module>taotao-manager</module>
         <module>taotao-manager-web</module>
     </modules>
-
     <properties>
         <junit.version>4.12</junit.version>
         <spring.version>4.2.4.RELEASE</spring.version>
@@ -43,6 +42,7 @@
         <activemq.version>5.11.2</activemq.version>
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
+        <fastjson.version>1.2.41</fastjson.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -230,7 +230,11 @@
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

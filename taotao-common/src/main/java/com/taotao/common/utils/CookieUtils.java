@@ -1,4 +1,4 @@
-package java.com.taotao.common.utils;
+package com.taotao.common.utils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
