@@ -13,9 +13,10 @@ public class ItemController {
     @Autowired
     private ItemService itemService;
 
-    @ResponseBody
-    @RequestMapping("/item/{itemId}")
-    public TbItem getItemById(@PathVariable long itemId) {
-        return itemService.getItemById(itemId);
+
+    @RequestMapping("/item")
+    public TbItem getItemById() {
+        System.out.println("ssssss");
+        return null;
     }
 }

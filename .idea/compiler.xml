@@ -9,6 +9,7 @@
         <module name="taotao-common" />
         <module name="taotao-dao" />
         <module name="taotao-interface" />
+        <module name="taotao-manager-web" />
         <module name="taotao-pojo" />
         <module name="taotao-service" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="taotao-dao" target="1.8" />
       <module name="taotao-interface" target="1.8" />
       <module name="taotao-manager" target="1.8" />
+      <module name="taotao-manager-web" target="1.8" />
       <module name="taotao-parent" target="1.8" />
       <module name="taotao-pojo" target="1.8" />
       <module name="taotao-service" target="1.8" />
