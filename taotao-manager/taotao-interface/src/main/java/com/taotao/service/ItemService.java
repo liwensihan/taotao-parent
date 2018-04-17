@@ -15,4 +15,12 @@ public interface ItemService {
      */
     TbItem getItemById(long itemId);
 
+    /**
+     * 分页查询商品信息
+     * @param page
+     * @param rows
+     * @return
+     */
+    EasyUIDataGridResult getItemList(int page,int rows);
+
 }
