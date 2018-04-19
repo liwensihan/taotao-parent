@@ -16,9 +16,10 @@
     <!-- 提供方应用信息，用于计算依赖关系 -->
     <dubbo:application name="taotao-manager" />
     <!-- zookeeper注册中心的地址，若是搭建的zookeeper集群，那么就需要加?backup=集群ip1,集群ip2-->
-    <dubbo:registry  address="zookeeper://192.168.199.134:2181?backup=192.168.199.132:2181,192.168.199.135:2181" />
+    <dubbo:registry  address="zookeeper://192.168.180.129:2181?backup=192.168.180.129:2182,192.168.180.129:2183" />
 
     <dubbo:protocol name="dubbo" port="20880" />
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.taotao.service.ItemService" ref="itemServiceImpl" timeout="300000"/>
+    <dubbo:service interface="com.taotao.service.ItemCatService" ref="itemCatServiceImpl" timeout="300000"/>
 </beans>
