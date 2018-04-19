@@ -12,6 +12,7 @@
         <module>taotao-common</module>
         <module>taotao-manager</module>
         <module>taotao-manager-web</module>
+        <module>taotao-sso</module>
     </modules>
 
     <properties>
@@ -46,6 +47,9 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+
+
+
             <!-- 时间操作组件 -->
             <dependency>
                 <groupId>joda-time</groupId>
