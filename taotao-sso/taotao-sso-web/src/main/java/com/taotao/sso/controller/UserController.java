@@ -7,6 +7,7 @@ import com.taotao.sso.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,17 +31,17 @@ public class UserController {
 
     /*登录页面*/
     @RequestMapping("/page/login")
-    public String loginPage(){
-
+    public String showLogin(String url, Model model){
+        model.addAttribute("redirect",url);
         return "login";
     }
 
     /*注册页面*/
     @RequestMapping("/page/register")
-    public String reginsterPage(){
-
+    public String showRegister(){
         return "register";
     }
+
 
     /*@ResponseBody 注解 返回结果不会被解析为跳转路径，而是直接写入HTTP 响应正文中。
         返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用*/

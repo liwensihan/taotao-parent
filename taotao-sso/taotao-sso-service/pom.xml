@@ -95,6 +95,12 @@
             <version>1.2.13</version>
         </dependency>
 
+        <!-- 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+
     </dependencies>
 
 

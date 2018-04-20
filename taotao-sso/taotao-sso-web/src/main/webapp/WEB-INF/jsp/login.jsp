@@ -29,7 +29,7 @@
                         <div class="i-name ico"></div>
                         <label id="loginname_succeed" class="blank invisible"></label>
                         <label id="loginname_error" class="hide"><b></b></label>
-                    </div>
+                    </divt>
                 </div>
                 <script type="text/javascript">
                     setTimeout(function () {
@@ -61,6 +61,7 @@
 <script type="text/javascript">
 	var redirectUrl = "${redirect}";
 	var LOGIN = {
+	    /*判断用户*/
 			checkInput:function() {
 				if ($("#loginname").val() == "") {
 					alert("用户名不能为空");
@@ -74,8 +75,9 @@
 				}
 				return true;
 			},
+        /*登录验证*/
 			doLogin:function() {
-				$.post("/page/login", $("#formlogin").serialize(),function(data){
+				$.post("/user/login", $("#formlogin").serialize(),function(data){
 					if (data.status == 200) {
 						alert("登录成功！");
 						if (redirectUrl == "") {
@@ -90,14 +92,18 @@
 				});
 			},
 			login:function() {
+			    /*判断用户名或密码是否为空*/
 				if (this.checkInput()) {
+				    /*调用登录函数*/
 					this.doLogin();
 				}
 			}
 		
 	};
 	$(function(){
+	    /*提交*/
 		$("#loginsubmit").click(function(){
+		    /*创建的var变量*/
 			LOGIN.login();
 		});
 	});
