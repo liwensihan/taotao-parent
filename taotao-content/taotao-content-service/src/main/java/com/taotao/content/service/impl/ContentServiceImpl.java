@@ -1,31 +1,31 @@
 package com.taotao.content.service.impl;
 
-import java.util.Date;
-import java.util.List;
-
-import com.alibaba.dubbo.config.annotation.Service;
-import com.taotao.common.utils.JsonUtils;
-import com.taotao.jedis.service.JedisClient;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.common.utils.JsonUtils;
 import com.taotao.content.service.ContentService;
+import com.taotao.jedis.service.JedisClient;
 import com.taotao.mapper.TbContentMapper;
 import com.taotao.pojo.TbContent;
 import com.taotao.pojo.TbContentExample;
 import com.taotao.pojo.TbContentExample.Criteria;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import java.util.Date;
+import java.util.List;
 
 @Service
 public class ContentServiceImpl implements ContentService {
     @Autowired
     private TbContentMapper contentMapper;
 
-    @Autowired
-    private JedisClient jedisClient;
+   /* @Autowired
+    private JedisClient jedisClient;*/
 
     @Value("${INDEX_CONTENT}")
     private String INDEX_CONTENT;
@@ -33,7 +33,7 @@ public class ContentServiceImpl implements ContentService {
     @Override
     public List<TbContent> getContentListByCid(long cid) {
         //首先查询缓存，如果缓存中存在的话，就直接将结果返回给前台展示，查询缓存不能影响业务流程
-        try {
+     /*   try {
             String json = jedisClient.hget(INDEX_CONTENT, cid+"");
             //如果从缓存中查到了结果
             if(StringUtils.isNotBlank(json)){
@@ -43,22 +43,21 @@ public class ContentServiceImpl implements ContentService {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
         TbContentExample example = new TbContentExample();
         Criteria criteria = example.createCriteria();
         criteria.andCategoryIdEqualTo(cid);
         List<TbContent> list = contentMapper.selectByExample(example);
         //添加缓存，不能影响业务流程
-        try {
+       /* try {
             String json = JsonUtils.objectToJson(list);
             jedisClient.hset(INDEX_CONTENT, cid+"", json);
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
         //返回结果
         return list;
     }
-
     @Override
     public EasyUIDataGridResult getContentList(long categoryId, int page, int rows) {
         //设置分页信息
@@ -84,7 +83,7 @@ public class ContentServiceImpl implements ContentService {
         content.setUpdated(new Date());
         //添加
         contentMapper.insert(content);
-        jedisClient.hdel(INDEX_CONTENT, content.getCategoryId().toString());
+       /* jedisClient.hdel(INDEX_CONTENT, content.getCategoryId().toString());*/
         //返回结果
         return TaotaoResult.ok();
     }

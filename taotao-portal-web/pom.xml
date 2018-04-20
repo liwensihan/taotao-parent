@@ -150,17 +150,10 @@
         </plugins>
         <resources>
             <resource>
-                <directory>src/main/resource/properties</directory>
+                <directory>src/main/resource/</directory>
                 <includes>
                     <include>**/*.xml</include>
                     <include>**/*.properties</include>
-                </includes>
-                <filtering>false</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/resource/spring</directory>
-                <includes>
-                    <include>**/*.xml</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>
