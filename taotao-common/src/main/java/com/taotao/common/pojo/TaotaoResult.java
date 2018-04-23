@@ -22,15 +22,34 @@ public class TaotaoResult implements Serializable{
 
     // 响应中的数据
     private Object data;
+    //自定义了3个私有的属性
 
+
+    //一个新的响应并初始化 status，msg，data 等三个参数
     public static TaotaoResult build(Integer status, String msg, Object data) {
         return new TaotaoResult(status, msg, data);
     }
 
+    //用来初始化私有属性
+    public TaotaoResult(Integer status, String msg, Object data) {
+        this.status = status;
+        this.msg = msg;
+        this.data = data;
+    }
+
+    //初始化数据源
     public static TaotaoResult ok(Object data) {
         return new TaotaoResult(data);
     }
 
+    //默认状态和信息
+    public TaotaoResult(Object data) {
+        this.status = 200;
+        this.msg = "OK";
+        this.data = data;
+    }
+
+    //空数据
     public static TaotaoResult ok() {
         return new TaotaoResult(null);
     }
@@ -39,21 +58,14 @@ public class TaotaoResult implements Serializable{
 
     }
 
+
     public static TaotaoResult build(Integer status, String msg) {
         return new TaotaoResult(status, msg, null);
     }
 
-    public TaotaoResult(Integer status, String msg, Object data) {
-        this.status = status;
-        this.msg = msg;
-        this.data = data;
-    }
 
-    public TaotaoResult(Object data) {
-        this.status = 200;
-        this.msg = "OK";
-        this.data = data;
-    }
+
+
 
 //    public Boolean isOK() {
 //        return this.status == 200;

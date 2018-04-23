@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 public class TbUserExample {
-    protected String orderByClause;
+    protected String orderByClause;     //用于排序
 
     protected boolean distinct;
 
@@ -36,17 +36,19 @@ public class TbUserExample {
     }
 
     public void or(Criteria criteria) {
+        //向条件集合添加一个条件
         oredCriteria.add(criteria);
     }
 
     public Criteria or() {
-        Criteria criteria = createCriteriaInternal();
+        Criteria criteria = createCriteriaInternal(); //专门用来new Criteria的方法
         oredCriteria.add(criteria);
         return criteria;
     }
 
     public Criteria createCriteria() {
-        Criteria criteria = createCriteriaInternal();
+        Criteria criteria = createCriteriaInternal(); //专门用来new Criteria的方法
+        //没有条件时，新增一个。
         if (oredCriteria.size() == 0) {
             oredCriteria.add(criteria);
         }
@@ -54,14 +56,16 @@ public class TbUserExample {
     }
 
     protected Criteria createCriteriaInternal() {
+        //专门用一个方法来创建对象，可能是工厂模式的一种
         Criteria criteria = new Criteria();
         return criteria;
     }
 
     public void clear() {
+        //清除集合
         oredCriteria.clear();
         orderByClause = null;
-        distinct = false;
+        distinct = false; //不可见
     }
 
     protected abstract static class GeneratedCriteria {
@@ -567,12 +571,13 @@ public class TbUserExample {
     }
 
     public static class Criteria extends GeneratedCriteria {
-
+        //引用父类
         protected Criteria() {
             super();
         }
     }
 
+    //判断
     public static class Criterion {
         private String condition;
 
