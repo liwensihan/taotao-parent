@@ -31,10 +31,33 @@ public class ItemServiceImpl implements ItemService {
     private TbItemMapper tbItemMapper;
     @Autowired
     private TbItemDescMapper itemDescMapper;
+    @Autowired
+    private JedisClient jedisClient;
+    @Value("${ITEM_INFO}")
+    private String ITEM_INFO;
+    @Value("${ITEM_EXPIRE}")
+    private Integer ITEM_EXPIRE;
 
     @Override
     public TbItem getItemById(long itemId) {
+        try {
+            String json = jedisClient.get(ITEM_INFO+":"+itemId+":BASE");
+            if(!StringUtils.isBlank(json)){
+                //把json转换成对象
+                return JSON.parseObject(json, TbItem.class);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         TbItem tbItem = tbItemMapper.selectByPrimaryKey(itemId);
+        try {
+            //把查询结果添加到缓存
+            jedisClient.set(ITEM_INFO+":"+itemId+":BASE", JSON.toJSONString(tbItem));
+            //设置过期时间，提高缓存的利用率
+            jedisClient.expire(ITEM_INFO+":"+itemId+":BASE", ITEM_EXPIRE);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return tbItem;
     }
 
@@ -70,6 +93,8 @@ public class ItemServiceImpl implements ItemService {
         return TaotaoResult.ok();
     }
 
+
+
     //添加商品描述
     private void insertItemDesc(long itemId,String desc){
         //创建一个商品描述表对应的pojo
@@ -81,5 +106,30 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setUpdated(new Date());
         //向商品描述表插入数据
         itemDescMapper.insert(itemDesc);
+    }
+
+    @Override
+    public TbItemDesc getItemDescById(long itemId) {
+        //查询数据库之前先查询缓存
+        try {
+            String json = jedisClient.get(ITEM_INFO+":"+itemId+":DESC");
+            if(!StringUtils.isBlank(json)){
+                //把json转换成对象
+                return JSON.parseObject(json, TbItemDesc.class);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        TbItemDesc tbItemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+        //把查询结果添加到缓存
+        try {
+            //把查询结果添加到缓存
+            jedisClient.set(ITEM_INFO+":"+itemId+":DESC", JSON.toJSONString(tbItemDesc));
+            //设置过期时间，提高缓存的利用率
+            jedisClient.expire(ITEM_INFO+":"+itemId+":DESC", ITEM_EXPIRE);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tbItemDesc;
     }
 }

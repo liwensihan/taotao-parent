@@ -32,4 +32,11 @@ public interface ItemService {
      */
     TaotaoResult createItem(TbItem tbItem,String desc) throws Exception;
 
+    /**
+     * 根据商品id查询商品描述
+     * @param itemId
+     * @return
+     */
+    TbItemDesc getItemDescById(long itemId);
+
 }
