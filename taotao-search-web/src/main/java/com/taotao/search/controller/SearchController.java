@@ -34,5 +34,4 @@ public class SearchController {
         //返回逻辑视图
         return "search";
     }
-
 }
