@@ -20,6 +20,7 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import javax.jms.*;
 import java.util.Date;
 import java.util.List;
@@ -37,6 +38,12 @@ public class ItemServiceImpl implements ItemService {
     private String ITEM_INFO;
     @Value("${ITEM_EXPIRE}")
     private Integer ITEM_EXPIRE;
+
+    @Autowired
+    private JmsTemplate jmsTemplate;
+    @Resource(name="itemAddTopic")
+    private Destination destination;
+
 
     @Override
     public TbItem getItemById(long itemId) {
@@ -90,6 +97,15 @@ public class ItemServiceImpl implements ItemService {
         tbItemMapper.insert(tbItem);
         //添加商品描述
         insertItemDesc(itemId, desc);
+        //发送activemq消息
+        jmsTemplate.send(destination,new MessageCreator() {
+
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(itemId+"");
+                return textMessage;
+            }
+        });
         return TaotaoResult.ok();
     }
 

@@ -1,0 +1,640 @@
+
+
+[INFO ] 2018-05-05 15:16:29,593 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-item-web': initialization started
+
+
+[INFO ] 2018-05-05 15:16:29,649 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat May 05 15:16:29 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-05 15:16:29,878 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\tool\taotao-parent\taotao-item-web\target\classes\spring\springmvc-activemq.xml]
+
+
+[INFO ] 2018-05-05 15:16:30,761 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\tool\taotao-parent\taotao-item-web\target\classes\spring\springmvc.xml]
+
+
+[INFO ] 2018-05-05 15:16:31,150 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-05-05 15:16:31,577 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2018-05-05 15:16:31,623 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-05-05 15:16:33,660 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\baiye\.dubbo\dubbo-registry-192.168.199.134.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.199.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=26812&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504462344, com.taotao.search.service.SearchService=empty://192.168.199.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=26912&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504502742, com.taotao.service.ItemCatService=empty://192.168.199.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=22588&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504457508, com.xbz.service.DemoService=override://0.0.0.0/com.xbz.service.DemoService?category=configurators&dynamic=false&enabled=true&nige.loadbalance=roundrobin, com.taotao.service.ItemService=empty://192.168.199.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=22588&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504446578, com.taotao.content.service.ContentService=empty://192.168.199.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=26812&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504462790, com.taotao.search.service.SearchItemService=empty://192.168.199.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=26912&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504491901}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-05 15:16:33,705 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-05-05 15:16:33,706 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-COBSCJH
+
+
+[INFO ] 2018-05-05 15:16:33,707 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-05-05 15:16:33,707 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-05-05 15:16:33,707 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-05-05 15:16:33,708 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\tool\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-05-05 15:16:33,709 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\deverloper\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\tool\apache-maven-3.5.2\bin;C:\Program Files\nodejs\;E:\工具\webservice_cxf\doc\apache-cxf-3.1.8\bin;;;C:\Program Files\Git\cmd;C:\Users\baiye\AppData\Local\Microsoft\WindowsApps;C:\Users\baiye\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-05-05 15:16:33,710 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\baiye\AppData\Local\Temp\
+
+
+[INFO ] 2018-05-05 15:16:33,710 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-05-05 15:16:33,712 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-05-05 15:16:33,713 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-05-05 15:16:33,715 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-05-05 15:16:33,715 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=baiye
+
+
+[INFO ] 2018-05-05 15:16:33,716 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\baiye
+
+
+[INFO ] 2018-05-05 15:16:33,716 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\tool\taotao-parent\taotao-item-web
+
+
+[INFO ] 2018-05-05 15:16:33,719 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.199.134:2181,192.168.199.132:2181,192.168.199.135:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1ea683df
+
+
+[INFO ] 2018-05-05 15:16:33,731 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-05-05 15:16:33,948 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.199.134/192.168.199.134:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-05-05 15:16:33,952 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.199.134/192.168.199.134:2181, initiating session
+
+
+[INFO ] 2018-05-05 15:16:33,972 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.199.134/192.168.199.134:2181, sessionid = 0x1632f0126f80003, negotiated timeout = 30000
+
+
+[INFO ] 2018-05-05 15:16:33,981 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-05-05 15:16:34,138 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=28940&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525504593309, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:16:34,219 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=28940&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525504593309, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:16:34,336 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=28940&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525504593309, urls: [dubbo://192.168.199.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=22588&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525504446578, empty://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=28940&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525504593309, empty://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=28940&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525504593309], dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:16:34,941 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.199.1:20880 from NettyClient 192.168.199.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xde271de3, /192.168.199.1:49746 => /192.168.199.1:20880]], dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:16:34,944 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-COBSCJH/192.168.199.1 connect to the server /192.168.199.1:20880, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:16:35,099 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.service.ItemService from url zookeeper://192.168.199.134:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-item-web&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=28940&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1525504593309, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:16:35,350 method:org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.postProcessTemplateLoaders(FreeMarkerConfigurer.java:127)
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+[INFO ] 2018-05-05 15:16:35,869 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/genhtml]}" onto public java.lang.String com.taotao.item.controller.HtmlGenController.genHtml() throws java.lang.Exception
+
+
+[INFO ] 2018-05-05 15:16:35,886 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public java.lang.String com.taotao.item.controller.ItemController.showItem(java.lang.Long,org.springframework.ui.Model)
+
+
+[INFO ] 2018-05-05 15:16:36,994 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat May 05 15:16:29 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-05 15:16:37,146 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat May 05 15:16:29 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-05 15:16:37,423 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2018-05-05 15:16:58,988 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-item-web': initialization completed in 29389 ms
+
+
+[INFO ] 2018-05-05 15:17:03,927 method:org.springframework.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure(DefaultMessageListenerContainer.java:854)
+JMS message listener invoker needs to establish shared Connection
+
+
+[ERROR] 2018-05-05 15:17:24,935 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:17:50,940 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:18:16,948 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:18:42,956 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[WARN ] 2018-05-05 15:18:50,543 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/desc/152446556325534.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[WARN ] 2018-05-05 15:18:57,529 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/param/152446556325534.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2018-05-05 15:19:08,966 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:19:34,971 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:20:00,976 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=6, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:20:26,994 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=7, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:20:53,001 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=8, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:21:19,008 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=9, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:21:45,020 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=10, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:22:11,028 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=11, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:22:37,033 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=12, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:23:03,039 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=13, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:23:29,052 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=14, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:23:55,059 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=15, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:24:21,074 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=16, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:24:47,078 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=17, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:25:13,084 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=18, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:25:39,094 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=19, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:26:05,100 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=20, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:26:31,105 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=21, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[INFO ] 2018-05-05 15:31:19,742 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-item-web': initialization started
+
+
+[INFO ] 2018-05-05 15:31:19,767 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat May 05 15:31:19 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-05 15:31:19,807 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\tool\taotao-parent\taotao-item-web\target\classes\spring\springmvc-activemq.xml]
+
+
+[INFO ] 2018-05-05 15:31:19,917 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\tool\taotao-parent\taotao-item-web\target\classes\spring\springmvc.xml]
+
+
+[INFO ] 2018-05-05 15:31:20,200 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-05-05 15:31:20,648 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2018-05-05 15:31:20,666 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-05-05 15:31:22,394 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\baiye\.dubbo\dubbo-registry-192.168.199.134.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.199.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505469896 empty://192.168.199.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505469896 dubbo://192.168.199.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=10616&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505402576, com.taotao.search.service.SearchService=empty://192.168.199.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=15920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505452896, com.taotao.service.ItemCatService=empty://192.168.199.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505471490 empty://192.168.199.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505471490 dubbo://192.168.199.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=9532&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505350446, com.xbz.service.DemoService=override://0.0.0.0/com.xbz.service.DemoService?category=configurators&dynamic=false&enabled=true&nige.loadbalance=roundrobin, com.taotao.service.ItemService=empty://192.168.199.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505471737 empty://192.168.199.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505471737 dubbo://192.168.199.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=9532&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505350077, com.taotao.content.service.ContentService=empty://192.168.199.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,deleteContent,updateContent&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505470952 empty://192.168.199.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,deleteContent,updateContent&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505470952 dubbo://192.168.199.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,deleteContent,updateContent&pid=10616&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505402993, com.taotao.search.service.SearchItemService=empty://192.168.199.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505471204 empty://192.168.199.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=22228&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505471204 dubbo://192.168.199.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=15920&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505442146}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-05 15:31:22,448 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-05-05 15:31:22,449 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-COBSCJH
+
+
+[INFO ] 2018-05-05 15:31:22,449 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_152
+
+
+[INFO ] 2018-05-05 15:31:22,450 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-05-05 15:31:22,450 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_152\jre
+
+
+[INFO ] 2018-05-05 15:31:22,451 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\tool\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-05-05 15:31:22,451 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\deverloper\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\tool\apache-maven-3.5.2\bin;C:\Program Files\nodejs\;E:\工具\webservice_cxf\doc\apache-cxf-3.1.8\bin;;;C:\Program Files\Git\cmd;C:\Users\baiye\AppData\Local\Microsoft\WindowsApps;C:\Users\baiye\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-05-05 15:31:22,452 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\baiye\AppData\Local\Temp\
+
+
+[INFO ] 2018-05-05 15:31:22,453 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-05-05 15:31:22,456 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-05-05 15:31:22,456 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-05-05 15:31:22,457 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-05-05 15:31:22,459 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=baiye
+
+
+[INFO ] 2018-05-05 15:31:22,460 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\baiye
+
+
+[INFO ] 2018-05-05 15:31:22,460 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\tool\taotao-parent\taotao-item-web
+
+
+[INFO ] 2018-05-05 15:31:22,462 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.199.134:2181,192.168.199.132:2181,192.168.199.135:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@59d7637
+
+
+[INFO ] 2018-05-05 15:31:22,490 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-05-05 15:31:22,584 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.199.132/192.168.199.132:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-05-05 15:31:32,588 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 10021ms for sessionid 0x0
+
+
+[INFO ] 2018-05-05 15:31:32,589 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 10021ms for sessionid 0x0, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-05-05 15:31:32,695 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.199.134/192.168.199.134:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-05-05 15:31:32,696 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.199.134/192.168.199.134:2181, initiating session
+
+
+[INFO ] 2018-05-05 15:31:32,709 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.199.134/192.168.199.134:2181, sessionid = 0x1632f0126f8000b, negotiated timeout = 30000
+
+
+[INFO ] 2018-05-05 15:31:32,710 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-05-05 15:31:32,745 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505481622, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:31:32,773 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505481622, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:31:32,816 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505481622, urls: [dubbo://192.168.199.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=9532&revision=1.0-SNAPSHOT&side=provider&timeout=300000&timestamp=1525505350077, empty://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505481622, empty://192.168.199.1/com.taotao.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timestamp=1525505481622], dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:31:33,035 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.199.1:20880 from NettyClient 192.168.199.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x5adc7ab1, /192.168.199.1:62817 => /192.168.199.1:20880]], dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:31:33,035 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-COBSCJH/192.168.199.1 connect to the server /192.168.199.1:20880, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:31:33,107 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.service.ItemService from url zookeeper://192.168.199.134:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-item-web&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1525505481622, dubbo version: 2.5.3, current host: 192.168.199.1
+
+
+[INFO ] 2018-05-05 15:31:33,260 method:org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.postProcessTemplateLoaders(FreeMarkerConfigurer.java:127)
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+[INFO ] 2018-05-05 15:31:33,484 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/genhtml]}" onto public java.lang.String com.taotao.item.controller.HtmlGenController.genHtml() throws java.lang.Exception
+
+
+[INFO ] 2018-05-05 15:31:33,486 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public java.lang.String com.taotao.item.controller.ItemController.showItem(java.lang.Long,org.springframework.ui.Model)
+
+
+[INFO ] 2018-05-05 15:31:34,171 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat May 05 15:31:19 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-05 15:31:34,264 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat May 05 15:31:19 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-05 15:31:34,455 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2018-05-05 15:31:55,733 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-item-web': initialization completed in 35988 ms
+
+
+[INFO ] 2018-05-05 15:32:00,714 method:org.springframework.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure(DefaultMessageListenerContainer.java:854)
+JMS message listener invoker needs to establish shared Connection
+
+
+[ERROR] 2018-05-05 15:32:21,729 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[WARN ] 2018-05-05 15:32:36,052 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/desc/152446665206590.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2018-05-05 15:32:47,732 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=1, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[WARN ] 2018-05-05 15:32:53,491 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/desc/152446665206590.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2018-05-05 15:33:13,747 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=2, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:33:39,750 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=3, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:34:05,755 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=4, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:34:31,760 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=5, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[WARN ] 2018-05-05 15:34:35,612 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/desc/152446665206590.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2018-05-05 15:34:57,764 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=6, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[WARN ] 2018-05-05 15:35:07,661 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/desc/152446665206590.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2018-05-05 15:35:23,780 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=7, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:35:49,786 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=8, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:36:15,799 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=9, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:36:41,803 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=10, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:37:07,817 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=11, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:37:33,829 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=12, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:37:59,834 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=13, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:38:25,849 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=14, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:38:51,854 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=15, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:39:17,857 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=16, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:39:43,862 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=17, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:40:09,868 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=18, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:40:35,878 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=19, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:41:01,890 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=20, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:41:27,895 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=21, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:41:53,899 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=22, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:42:19,923 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=23, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:42:45,927 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=24, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:43:11,942 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=25, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:43:37,945 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=26, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:44:03,952 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=27, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:44:29,965 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=28, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:44:55,979 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=29, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:45:21,994 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=30, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:45:48,009 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=31, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:46:14,012 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=32, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:46:40,018 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=33, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:47:06,027 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=34, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:47:32,030 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=35, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[WARN ] 2018-05-05 15:47:43,878 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/desc/152446556325534.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2018-05-05 15:47:58,045 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=36, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:48:24,048 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=37, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:48:50,051 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=38, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:49:16,056 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=39, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[ERROR] 2018-05-05 15:49:42,082 method:org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:937)
+Could not refresh JMS Connection for destination 'topic://item-add-topic' - retrying using FixedBackOff{interval=5000, currentAttempts=40, maxAttempts=unlimited}. Cause: Could not connect to broker URL: tcp://192.168.199.132:61616. Reason: java.net.ConnectException: Connection timed out: connect
+
+
+[INFO ] 2018-05-05 15:49:42,779 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.199.1:20880,url:dubbo://192.168.199.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-item-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=20504&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1525505481622, dubbo version: 2.5.3, current host: 192.168.199.1
