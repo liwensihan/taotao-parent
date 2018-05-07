@@ -20,7 +20,7 @@ public class TestFreeMarker {
         //2.创建一个Configuration对象
         Configuration configuration = new Configuration(Configuration.getVersion());
         //3.设置模板所在的路径
-        configuration.setDirectoryForTemplateLoading(new File("E:\\TaoTao-Shop\\taotao-item-web\\src\\main\\webapp\\WEB-INF\\ftl"));
+        configuration.setDirectoryForTemplateLoading(new File("E:\\tool\\taotao-parent\\taotao-item-web\\src\\main\\webapp\\WEB-INF\\ftl"));
         //4.设置模板的字符集，一般为utf-8
         configuration.setDefaultEncoding("utf-8");
         //5.使用Configuration对象加载一个模板文件，需要指定模板文件的文件名。
@@ -29,7 +29,7 @@ public class TestFreeMarker {
         Map data = new HashMap<>();
         data.put("hello", "hello freemarker");
         //7.创建一个Writer对象，指定输出文件的路径及文件名
-        Writer out = new FileWriter(new File("E:\\Xiaomi\\hello.html"));
+        Writer out = new FileWriter(new File("E:\\hello.html"));
         //8.使用模板对象的process方法输出文件
         template.process(data, out);
         //9.关闭流

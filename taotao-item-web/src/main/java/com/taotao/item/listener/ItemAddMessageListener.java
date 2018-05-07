@@ -63,7 +63,5 @@ public class ItemAddMessageListener implements MessageListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
-
 }
